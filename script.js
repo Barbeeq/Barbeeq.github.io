@@ -906,7 +906,7 @@
 
 // TIMER
 
-let deadline = '2022-01-12';
+let deadline = '2022-01-13';
 
 function getTimeRemaining(endtime) {
     let t = (Date.parse(endtime) - Date.parse(new Date()) - 10800000),
