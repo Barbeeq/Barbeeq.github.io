@@ -1,0 +1,225 @@
+/* Выпадающее меню */
+
+
+/* #block {
+  width: 200px;
+  height: 100px;
+  background-color: green;
+}
+
+.menu-item {
+  border: 2px solid #66cdaa;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+.menu-item .submenu {
+  height: 40px;
+  width: 120px;
+  background-color: green;
+  position: absolute;
+  cursor: pointer;
+} */
+
+
+/* #tabs .tab {
+  display: inline-block;
+  padding: 5px 10px;
+  cursor: pointer;
+  position: relative;
+  z-index: 5;
+}
+#tabs .whiteborder {
+  border: 1px solid #707070;
+  border-bottom: 1px solid #fff;
+  border-radius: 3px 3px 0 0;
+}
+#tabs .tabContent {
+  width: 300px;
+  height: 60px;
+  border: 1px solid #707070;
+  position: relative;
+  top: -1px;
+  z-index: 1;
+  padding: 10px;
+  border-radius: 0 0 3px 3px;
+}
+
+#tabs .hide {
+  display: none;
+}
+#tabs .show {
+  display: block;
+} */
+
+#btn,
+#btn-second {
+    width: 200px;
+    height: 100px;
+    background-color: #c3c3c3;
+    border-radius: 20px;
+    outline: none;
+    border: 1px solid #c5c5c5;
+    cursor: pointer;
+}
+
+#square,
+.square {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+
+#square.active {
+    display: none;
+}
+
+.inner {
+    max-width: 150px;
+    margin: 0 auto;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.square.highlight {
+    background-color: green;
+}
+
+.number {
+    width: 40px;
+    height: 40px;
+}
+
+#field {
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    height: 40px;
+}
+
+#num1,
+#num2 {
+    margin: 0 auto;
+    height: 25px;
+    width: 150px;
+    border-radius: 15px;
+    outline: none;
+    background-color: rgba(12, 24, 102, 0.6);
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.operator_btns button {
+    color: white;
+    background-color: rgba(12, 24, 102, 0.6);
+    border: none;
+    font-size: 15px;
+    text-align: center;
+    box-sizing: border-box;
+    height: 30px;
+    outline: none;
+    width: 30px;
+    cursor: pointer;
+    margin-right: 5px;
+    display: block;
+}
+
+.operator_btns button:focus {
+    background-color: rgba(12, 24, 102, 0.4);
+}
+
+.operator_btns {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+#btn {
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    height: 35px;
+    font-size: 15px;
+    color: white;
+    background-color: rgba(12, 24, 102, 0.6);
+    outline: none;
+    border: none;
+    transition: 0.4s ease all;
+}
+
+#btn:hover {
+    background-color: rgba(12, 24, 102, 0.5);
+}
+
+#result {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(12, 24, 102, 0.6);
+    color: white;
+    font-size: 20px;
+}
+
+#timer span {
+    font-size: 50px;
+    background-color: rgba(12, 48, 102, 0.8);
+    color: white;
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 90px;
+}
+
+#timer {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px
+}
+
+.title {
+    font-size: 40px;
+    color: rgba(12, 24, 102, 0.8);
+    text-align: center;
+    margin-top: 15%;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 0px 35px 0px rgba(12, 24, 102, 0.7), 0px 70px 0px rgba(12, 24, 102, 0.6), 0px 105px 0px rgba(12, 24, 102, 0.5), 0px 140px 0px rgba(12, 24, 102, 0.4), 0px 175px 0px rgba(12, 24, 102, 0.3), 0px 210px 0px rgba(12, 24, 102, 0.2), 0px 245px 0px rgba(12, 24, 102, 0.1);
+    font-family: 'Arial Black';
+}
+
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+#canvas {
+    display: none;
+}
+
+#canvas.active {
+    display: block;
+    position: absolute;
+    z-index: 4;
+    background-color: rgba(12, 24, 102, 0.8);
+    top: 0;
+    transform: translateY(50%);
+    left: 50%;
+    transform: translateX(-50%);
+}
